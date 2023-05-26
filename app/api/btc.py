@@ -50,7 +50,7 @@ class Btc(Base):
             response = self.btc
             return make_response(jsonify(response), 400)
         except (TypeError, KeyError):
-            return make_response(jsonify({'rate': self.btc['price']}), 200)
+            return make_response(jsonify({'rate': round(float(self.btc['price']), 3)}), 200)
 
     def post(self):
         """HTTP method POST"""

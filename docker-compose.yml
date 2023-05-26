@@ -1,0 +1,20 @@
+version: '3.7'
+
+services:
+  web:
+    restart: always
+    build: .
+    container_name: btc
+    environment:
+      - PYTHONUNBUFFERED=True
+    env_file:
+      - .flaskenv
+    volumes:
+      - .:/code
+    expose:
+      - '5000'
+    ports:
+      - "5050:5000"
+    command: python /code/web.py
+#    command: cd code && flask run
+#    command: flask run

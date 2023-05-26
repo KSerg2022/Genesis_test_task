@@ -33,8 +33,8 @@
 В ньому зробити:
 - FLASK_APP=web.py
 - FLASK_DEBUG=1
-- SECRET_KEY=<some_secret_key>
 - ENVIRONMENT=development
+- SECRET_KEY=<some_secret_key>
 
 - API_COINMARCETCAP=<api_key для доступу к coinmarketcap.com>.
 

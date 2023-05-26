@@ -1,0 +1,10 @@
+FLASK_APP=web.py
+FLASK_DEBUG=1
+ENVIRONMENT=development
+SECRET_KEY=<some_secret_key>
+
+API_COINMARCETCAP=<api_key для доступу к coinmarketcap.com>
+
+EMAIL=<xxxx - email, якій буде використано для разсилкі почти>
+EMAIL_PASSWORD=<xxxx - пароль до email, якій буде використано для разсилкі почти>
+

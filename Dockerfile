@@ -10,9 +10,3 @@ WORKDIR /code
 COPY . /code
 
 RUN pip install -r /code/requirements.txt
-
-
-# my adding
-#ENTRYPOINT ['python']
-#CMD ['web.py']
-#CMD ['python', 'web.py']

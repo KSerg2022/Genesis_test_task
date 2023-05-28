@@ -1,0 +1,18 @@
+FROM python:3.10
+
+
+RUN apt-get update && apt-get -y upgrade
+
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
+
+WORKDIR /code
+COPY . /code
+
+RUN pip install -r /code/requirements.txt
+
+CMD python web.py
+
+
+# docker build -t btc -f Dockerfile_win .
+# docker run -d -p 5000:5000 btc
